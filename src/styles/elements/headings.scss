@@ -21,11 +21,12 @@ h1 {
 
 h2 {
     font-size: var(--font-size-h2);
-    font-family: var(--font-secondary);
 }
 
 h3 {
     font-size: var(--font-size-h3);
+    font-family: var(--font-secondary);
+    color: var(--color-light-primary);
 }
 
 h4 {
