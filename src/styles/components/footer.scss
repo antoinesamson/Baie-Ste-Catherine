@@ -1,0 +1,44 @@
+.bas-de-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    padding: 100px 0;
+
+    .copyright {
+        text-align: right;
+    }
+
+    .logo-footer {
+        text-align: center;
+        padding: 0 80px;
+        border: 2px var(--color-light-primary);
+        height: 200px;
+        border-style: none solid none solid;
+    }
+
+    .logo-footer ul {
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        a {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: var(--color-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .liens {
+        text-align: left;
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+    }
+}
