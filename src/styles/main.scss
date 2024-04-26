@@ -1,6 +1,8 @@
 //FONTS
 // ici sont chargé les fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Yellowtail&display=swap');
+@import '../../node_modules/swiper/swiper-bundle';
+@import '../../node_modules/swiper/swiper';
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
 @import 'tools/typo';
