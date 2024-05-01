@@ -1,6 +1,6 @@
 //FONTS
 // ici sont chargé les fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Yellowtail&family=Lexend+Deca&display=swap');
 @import '../../node_modules/swiper/swiper-bundle';
 @import '../../node_modules/swiper/swiper';
 // TOOLS
@@ -34,6 +34,7 @@
 @import 'components/header';
 @import 'components/hero';
 @import 'components/liste';
+@import 'components/swiper';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
