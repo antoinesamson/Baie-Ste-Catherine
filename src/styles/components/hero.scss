@@ -10,12 +10,17 @@
     .hero-content {
         width: 50%;
         position: absolute;
-        top: calc(50% - 160px);
+        top: calc(50% - 120px);
         z-index: 10;
         h1,
         h3 {
             color: var(--color-white);
             font-weight: 400;
+            margin: 0;
+        }
+
+        .blue {
+            color: var(--color-primary);
         }
     }
 }

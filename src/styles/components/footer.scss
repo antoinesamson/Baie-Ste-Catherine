@@ -21,22 +21,6 @@
         border-style: none solid none solid;
     }
 
-    .logo-footer ul {
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-
-        a {
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            background-color: var(--color-gray);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-
     .liens {
         text-align: left;
 
