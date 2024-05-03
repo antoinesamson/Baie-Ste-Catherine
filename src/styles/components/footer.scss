@@ -4,11 +4,16 @@
     gap: 10px;
     padding: 100px 0;
 
+    h4 {
+        margin-top: 0;
+    }
+
     .copyright {
         text-align: right;
     }
 
     .logo-footer {
+        margin-top: 0;
         text-align: center;
         padding: 0 80px;
         border: 2px var(--color-light-primary);

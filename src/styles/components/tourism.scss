@@ -1,0 +1,19 @@
+.tourism {
+    text-align: center;
+    padding: 100px 0 100px 0;
+    background-color: var(--color-light-gray);
+
+    .button {
+        margin: 23px auto auto auto;
+        color: var(--color-black);
+        .icon {
+            color: var(--color-white);
+        }
+    }
+}
+.activities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
