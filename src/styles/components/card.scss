@@ -1,0 +1,26 @@
+.card {
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .card-content {
+        background-color: var(--color-light-gray);
+        padding: 30px;
+        border-radius: 0 0 30px 30px;
+
+        h6 {
+            margin: 0 0 10px 0;
+            text-align: right;
+        }
+        h5 {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+            color: var(--color-primary);
+        }
+    }
+}

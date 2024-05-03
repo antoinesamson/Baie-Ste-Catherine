@@ -1,0 +1,23 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-light-primary);
+    border-radius: 16px;
+    padding: 28px;
+    color: var(--color-white);
+    width: 305px;
+    margin-top: 23px;
+    text-align: center;
+
+    .icon {
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        padding: 2px;
+    }
+
+    &:hover {
+        color: var(--color-white);
+    }
+}

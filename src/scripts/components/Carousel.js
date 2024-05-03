@@ -23,5 +23,20 @@ export default class Carousel {
     const swiper = new Swiper(this.element, this.options, {});
   }
 
-  setOptions() {}
+  setOptions() {
+    if ('autoplay' in this.element.dataset) {
+      this.options.autoplay = {
+        delay: 5000,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+      };
+
+      this.options.loop = true;
+    }
+
+    if ('slides' in this.element.dataset) {
+      this.options.slidesPerView = 3.5;
+      this.options.spaceBetween = 20;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 {% include "_partials/_header.html" %}
 
 <div class="hero">
-    <div class="swiper" data-component="Carousel">
+    <div class="swiper" data-component="Carousel" data-autoplay>
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
@@ -13,19 +13,136 @@
     </div>
     <div class="wrapper">
         <div class="hero-content">
-        <h3>Baie Ste-Catherine</h3>
-        <h1>Capitale de la zénitude et des baleines</h1>
-        <a class="button">
-            Découvre les activités
-            <div class="arrow">
+            <h3>Baie Ste-Catherine</h3>
+            <h1>Capitale de la zénitude et des baleines</h1>
+            <a class="button">
+                Découvre les activités
+                <div class="arrow">
+                    <svg class="icon">
+                        <use xlink:href="#icon-chevron-right"></use>
+                    </svg>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 
+<section class="news">
+    <div class="wrapper">
+        <h3>Actualités</h3>
+        <h2>Les dernières nouvelles</h2>
+
+        <div class="swiper" data-component="Carousel" data-slides>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-media">
+                            <img src="assets/images/slide-1.png" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h6>15 mars 2024</h6>
+                            <h5>Communiqué</h5>
+                            <p>une attente qui en valait la peine ...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-media">
+                            <img src="assets/images/slide-2.png" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h6>19 mars 2024</h6>
+                            <h5>Joyeuses pâques</h5>
+                            <p>Veuillez prendre note que ...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-media">
+                            <img src="assets/images/slide-3.png" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h6>28 mars 2024</h6>
+                            <h5>Avis public</h5>
+                            <p>Dépôt du 2e projet de règlement ...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <div class="card-media">
+                            <img src="assets/images/slide-4.png" alt="" />
+                        </div>
+                        <div class="card-content">
+                            <h6>4 avril 2024</h6>
+                            <h5>Accès aux serveurs</h5>
+                            <p>Serveurs haute vitesse (HIV)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="button">
+            Voir toutes les nouvelles
+            <div class="arrow">
                 <svg class="icon">
                     <use xlink:href="#icon-chevron-right"></use>
                 </svg>
             </div>
         </a>
     </div>
+</section>
+
+<section class="story">
+    <div class="wrapper">
+        <div class="story-group">
+            <div class="story-media">
+                <img src="assets/images/story-1.png" alt="" />
+            </div>
+
+            <div class="story-content">
+                <h3>Histoire</h3>
+                <h2>Anse Ste-Catherine</h2>
+                <p>
+                    Baie-Sainte-Catherine fut d’abord appelée l’Anse à la Catherine, en rappel du naufrage du vaisseau La Catherine qui, au soir d’une tempête
+                    le 27 novembre 1686, alla s’échouer dans cette anse à l’entrée du Saguenay.
+                </p>
+                <p>
+                    Ce village est connu depuis plus d’un siècle par une traverse régulière qui relie les deux rives du Saguenay, de sorte qu’il est le passage
+                    obligé pour tous ceux qui veulent aller sur la Côte Nord ou en sortir. Ce fut en premier lieu un village industriel. William Price en 1843 y
+                    construisit un moulin à scie sur la première chute de la rivière aux Canards.
+                </p>
+            </div>
+        </div>
+
+        <div class="story-group">
+            <div class="story-content reverse">
+                <h3>Mission</h3>
+                <h2>Comté de Saguenay</h2>
+                <p>
+                    Comté de Saguenay. Diocèse de Chicoutimi. La mission de Saint-Firmin est assez ancienne. Les premiers colons, qui venaient de la Malbaie,
+                    s'y établirent vers 1820. Une chapelle y fut construite en 1875. Elle fut desservie jusqu'en 1901 par les curés et missionnaires de
+                    Tadoussac. Un curé y réside depuis 1901, année de l'ouverture des registres de la paroisse.
+                </p>
+                <p>
+                    La desserte de Saint-Firmin comprend le canton de Saguenay, lequel fut organisé en municipalité sous le nom de «Saint-Firmin», le 4 novembre
+                    1903, par arrêté-en-Conseil. Ce territoire faisait auparavant partie de la municipalité de Tadoussac.
+                </p>
+            </div>
+
+            <div class="story-media reverse">
+                <img src="assets/images/story-2.png" alt="" />
+            </div>
+        </div>
     </div>
-</div>
+</section>
 
 {% include "_partials/_footer.html" %}

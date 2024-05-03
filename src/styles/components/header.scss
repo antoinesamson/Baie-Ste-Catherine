@@ -25,6 +25,10 @@ nav {
     text-align: center;
     gap: 20px;
 
+    h3 {
+        color: var(--color-light-primary);
+    }
+
     .icon {
         color: var(--color-black);
         height: 74px;

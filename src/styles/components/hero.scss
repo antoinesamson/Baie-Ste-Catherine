@@ -1,39 +1,21 @@
 .hero {
-
     position: relative;
-    img{
+    img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        z-index: 0;        
-
+        z-index: 0;
     }
 
-
-
-    .hero-content{
+    .hero-content {
         width: 730px;
         position: absolute;
         top: calc(50% - 160px);
         z-index: 10;
         h1,
-        h3{
+        h3 {
             color: var(--color-white);
             font-weight: 400;
         }
-        
     }
-
-    .button {
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        background-color: var(--color-light-primary);
-        border-radius: 16px;
-        padding: 28px;
-        color: var(--color-white);
-        width: 305px;
-        margin-top: 23px;
-    }
-   
 }
