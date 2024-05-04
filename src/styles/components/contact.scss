@@ -1,0 +1,28 @@
+
+
+.contact{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 17px;
+
+    h5{
+        margin: 0;
+    }
+
+    .contact-icon{
+
+        padding: 24px;
+        background-color: var(--color-gray);
+        border-radius: 11px;
+        text-align: center;
+
+        .icon{
+            height: 90px;
+            width: 90px;
+            color: var(--color-primary);
+        }
+    }
+}
