@@ -68,4 +68,171 @@
 </div>
 </section>
 
+<section class="join">
+    <div class="wrapper">
+        <h5>Informations personnelles</h5>
+    <form action="" class="form" autocomplete="off">
+        <fieldset class="grid">
+
+            <div class="input">
+                <label class="input__label" for="name">Votre prénom*</label>
+                <input
+                 class="input__element" 
+                 type="text" 
+                 name="" 
+                 id="name" 
+                 placeholder="Jean-Eude"
+                 >
+            </div>
+
+            <div class="input">
+                <label class="input__label" for="last-name">Votre nom*</label>
+                <input
+                 class="input__element" 
+                 type="text" 
+                 name="" 
+                 id="last-name" 
+                 placeholder="Courtepaille"
+                 >
+            </div>
+
+            <div class="input grid-fill">
+                <label class="input__label" for="address">Addresse*</label>
+                <input
+                 class="input__element" 
+                 type="text" 
+                 name="address" 
+                 id="address" 
+                 placeholder="2020, rue du Finfin"
+                 >
+            </div>
+            
+            <div class="input">
+                <label class="input__label" for="city">Ville*</label>
+                <input
+                 class="input__element" 
+                 type="text" 
+                 name="city" 
+                 id="city" 
+                 placeholder="Longueuil"
+                 >
+            </div>
+            
+            <div class="input select">
+                <label class="input__label" for="province">Province*</label>
+                <select name="province" id="province" class="input__element" required>
+                    <option value="" hidden>Choisir une province</option>
+                    <option value="qc">Québec</option>
+                    <option value="on">Ontario</option>
+                    <option value="ma">Manitoba</option>
+                    <option value="sa">Saskatchewan</option>
+                    <option value="al">Alberta</option>
+                    <option value="cb">Colombie Britanique</option>
+                    <option value="tn">Terre-Neuve et Labrador</option>
+                    <option value="ipe">Île du Prince Édouard</option>
+                    <option value="ne">Nouvelle Écosse</option>
+                </select>
+            </div>
+
+            <div class="input">
+                <label class="input__label" for="phone">Votre numéro de téléphone*</label>
+                <input
+                 class="input__element" 
+                 type="tel" 
+                 name="phone" 
+                 id="phone" 
+                 placeholder="(555) 625-3285"
+                 >
+            </div>
+
+            <div class="input">
+                <label class="input__label" for="email">Votre adresse courriel*</label>
+                <input
+                 class="input__element" 
+                 type="email" 
+                 name="email" 
+                 id="email" 
+                 placeholder="Jean-Eude@comtedelarocheliere.com"
+                 >
+            </div>
+
+            <label class="input__label grid-fill" for="contact">Méthode pour vous joindre*</label>
+
+            <div class="input radio grid-fill">
+                
+                <input
+                 class="input__element" 
+                 type="radio" 
+                 name="contact" 
+                 id="contact1" 
+                 value="courriel"
+                 >
+                 <label class="input__label grid-fill" for="contact1">Courriel</label>
+            </div>
+
+            <div class="input radio grid-fill">
+                
+                <input
+                 class="input__element" 
+                 type="radio" 
+                 name="contact" 
+                 id="contact2" 
+                 value="téléphone"
+                 >
+                 <label class="input__label grid-fill" for="contact2">Téléphone</label>
+            </div>
+
+
+            
+        </fieldset>
+
+
+    </form>
+
+    <h5>Requête citoyenne</h5>
+
+    <form action="" class="form" autocomplete="off">
+        <fieldset class="grid">
+            <div class="input select grid-fill">
+                <label class="input__label" for="subject">Sujet*</label>
+                <select name="subject" id="subject" class="input__element" required>
+                    <option value="" hidden>Sélectionnez une requête</option>
+                    <option value="p">Permis de stationnement</option>
+                    <option value="d">Demande de renseignements</option>
+                    <option value="r">Réservation de salle</option>
+                    <option value="a">Autre</option>
+                </select>
+            </div>
+
+            <div class="input textarea grid-fill">
+                <label class="input__label" for="comment">Commentaire*</label>
+                <textarea class="input__element" name="comment" id="comment"placeholder="Inscrire votre requête ici"></textarea>
+            </div>
+            
+            <label class="input__label grid-fill" for="optin">Conditions d'utilisation*</label>
+            <div class="input checkbox">
+                
+                <input
+                 class="input__element" 
+                 type="checkbox" 
+                 name="optin[]" 
+                 id="optin" 
+                 value="true"
+                 >
+                 <label class="input__label grid-fill" for="optin">j'accepte les conditions d'utilisation</label>
+            </div>
+        </fieldset>
+    </form>
+
+    <a class="button">
+        Envoyer
+        <div class="arrow">
+            <svg class="icon icon--stroke icon--sm">
+                <use xlink:href="#icon-arrow"></use>
+            </svg>
+        </div>
+    </a>
+</div>
+</section>
+
 {% include "_partials/_footer.html" %}
