@@ -23,7 +23,20 @@
         }
     }
     
-    
+}
+
+.form__confirmation{
+    display: none;
+
+    .is-sent & {
+        display: block;
+    }
+}
+
+.form__body{
+    .is-sent & {
+        display: none;
+    }
 }
 
 .input__label{
@@ -175,6 +188,8 @@
     
     .radio {
         .input__label{
+
+            margin-bottom: 20px;
             &::before{
                 border-radius: 100%;
             }
@@ -187,3 +202,20 @@
             }
         }
     }
+
+
+/////////error
+
+.error{
+    .input__element,
+    &.checkbox .input__label::before,
+    &.radio .input__label::before,
+    .checkbox .input__label::before,
+    .radio .input__label::before{
+        border-color: var(--color-fail);
+    }
+
+    .input__label{
+        color: var(--color-fail);
+    }
+}

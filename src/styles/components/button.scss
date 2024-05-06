@@ -10,6 +10,7 @@
     width: 305px;
     margin-top: 23px;
     text-align: center;
+    border: none;
 
     .icon {
         height: 19px;
@@ -22,5 +23,6 @@
 
     &:hover {
         color: var(--color-white);
+        background-color: var(--color-dark-gray);
     }
 }

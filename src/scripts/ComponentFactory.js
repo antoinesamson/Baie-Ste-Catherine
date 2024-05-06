@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Carousel from './components/Carousel';
 import Scrolly from './components/Scrolly';
 import Youtube from './components/Youtube';
+import Form from './components/Form';
 
 export default class ComponentFactory {
   constructor(element) {
@@ -11,6 +12,7 @@ export default class ComponentFactory {
       Carousel,
       Scrolly,
       Youtube,
+      Form,
     };
     this.init();
   }
