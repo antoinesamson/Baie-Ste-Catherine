@@ -41,9 +41,16 @@ export default class Accordion{
         }
 
         else{
-            event.currentTarget.classList.toggle('is-active');
-          this.closeAccordions(); 
-           event.currentTarget.classList.toggle('is-active');
+
+            if(!event.currentTarget.classList.contains('is-active')){
+                this.closeAccordions(); 
+                event.currentTarget.classList.add('is-active');
+            }
+
+            else if(event.currentTarget.classList.contains('is-active')){
+            event.currentTarget.classList.remove('is-active');
+          }
+           
 
         }
         

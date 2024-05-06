@@ -11,5 +11,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all 0.3s ease-out;
+        &:hover{
+        background-color: var(--color-light-primary);
+            .icon{
+                color: var(--color-white);
+            }
     }
+    }
+
+    
 }
