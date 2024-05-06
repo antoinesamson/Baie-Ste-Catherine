@@ -5,14 +5,16 @@
     gap: 10px;
     background-color: var(--color-light-primary);
     border-radius: 16px;
-    padding: 28px;
+    padding: 25px;
     color: var(--color-white);
     width: 305px;
     margin-top: 23px;
     text-align: center;
-    border: none;
+    border: 3px solid transparent;
+    transition: all 0.3s ease-out;
 
     .icon {
+        color: var(--color-white);
         height: 19px;
         width: 19px;
         background-color: var(--color-primary);
@@ -22,7 +24,11 @@
     }
 
     &:hover {
-        color: var(--color-white);
-        background-color: var(--color-dark-gray);
+        color: var(--color-black);
+        background-color: transparent;
+        border: 3px solid var(--color-light-primary);
+        text-decoration: none;
+        cursor: pointer;
+
     }
 }

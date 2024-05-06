@@ -3,6 +3,7 @@ import Carousel from './components/Carousel';
 import Scrolly from './components/Scrolly';
 import Youtube from './components/Youtube';
 import Form from './components/Form';
+import Accordion from './components/Accordion';
 
 export default class ComponentFactory {
   constructor(element) {
@@ -13,6 +14,7 @@ export default class ComponentFactory {
       Scrolly,
       Youtube,
       Form,
+      Accordion,
     };
     this.init();
   }

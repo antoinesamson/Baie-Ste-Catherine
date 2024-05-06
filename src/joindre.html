@@ -78,7 +78,7 @@
             <fieldset class="grid">
                 
                 <div class="input">
-                    <label class="input__label" for="name">Votre prénom*</label>
+                    <label class="input__label" for="name">Votre prénom* <div class="error_info">Veuillez entrer un prénom</div></label>
                     <input
                      class="input__element" 
                      type="text" 
@@ -90,7 +90,7 @@
                 </div>
     
                 <div class="input">
-                    <label class="input__label" for="last-name">Votre nom*</label>
+                    <label class="input__label" for="last-name">Votre nom* <div class="error_info">Veuillez entrer un nom</div></label>
                     <input
                      class="input__element" 
                      type="text" 
@@ -102,7 +102,7 @@
                 </div>
     
                 <div class="input grid-fill">
-                    <label class="input__label" for="address">Addresse*</label>
+                    <label class="input__label" for="address">Addresse* <div class="error_info">Veuillez entrer une adresse valide</div></label>
                     <input
                      class="input__element" 
                      type="text" 
@@ -114,7 +114,7 @@
                 </div>
                 
                 <div class="input">
-                    <label class="input__label" for="city">Ville*</label>
+                    <label class="input__label" for="city">Ville* <div class="error_info">Veuillez entrer un nom de ville</div></label>
                     <input
                      class="input__element" 
                      type="text" 
@@ -126,7 +126,7 @@
                 </div>
                 
                 <div class="input select">
-                    <label class="input__label" for="province">Province*</label>
+                    <label class="input__label" for="province">Province* <div class="error_info">Veuillez séléctionner une province</div></label>
                     <select name="province" id="province" class="input__element" required>
                         <option value="" hidden>Choisir une province</option>
                         <option value="qc">Québec</option>
@@ -142,7 +142,7 @@
                 </div>
     
                 <div class="input">
-                    <label class="input__label" for="phone">Votre numéro de téléphone*</label>
+                    <label class="input__label" for="phone">Votre numéro de téléphone* <div class="error_info">Veuillez entrer un numéro de téléphone valide</div></label>
                     <input
                      class="input__element" 
                      type="tel" 
@@ -155,7 +155,7 @@
                 </div>
     
                 <div class="input">
-                    <label class="input__label" for="email">Votre adresse courriel*</label>
+                    <label class="input__label" for="email">Votre adresse courriel* <div class="error_info">Veuillez entrer une adresse courriel valide</div></label>
                     <input
                      class="input__element" 
                      type="email" 
@@ -166,7 +166,7 @@
                      >
                 </div>
     
-                <label class="input__label grid-fill" for="contact1">Méthode pour vous joindre*</label>
+                <label class="input__label grid-fill" for="contact1">Méthode pour vous joindre* <div class="error_info">Veuillez sélectionner une méthode de contact</div></label>
     
                 <div class="form__list" data-input-container>
                 <div class="input radio grid-fill">
@@ -208,7 +208,7 @@
             <fieldset class="grid">
                 <h5>Requête citoyenne</h5>
                 <div class="input select grid-fill">
-                    <label class="input__label" for="subject">Sujet*</label>
+                    <label class="input__label" for="subject">Sujet* <div class="error_info">Veuillez entrer un sujet</div></label>
                     <select name="subject" id="subject" class="input__element" required>
                         <option value="" hidden>Sélectionnez une requête</option>
                         <option value="p">Permis de stationnement</option>
@@ -219,12 +219,12 @@
                 </div>
     
                 <div class="input textarea grid-fill">
-                    <label class="input__label" for="comment">Commentaire*</label>
-                    <textarea class="input__element" name="comment" id="comment"placeholder="Inscrire votre requête ici" required></textarea>
+                    <label class="input__label" for="comment">Commentaire* <div class="error_info">Veuillez entrer votre requête ici</div></label>
+                    <textarea class="input__element" name="comment" id="comment" maxlength="500" placeholder="Inscrire votre requête ici" required></textarea>
                 </div>
                 
-                <label class="input__label grid-fill" for="optin">Conditions d'utilisation*</label>
-                <div class="input checkbox">
+                <label class="input__label grid-fill" for="optin">Conditions d'utilisation* </label>
+                <div class="input checkbox grid-fill">
                     
                     <input
                      class="input__element" 
@@ -234,7 +234,7 @@
                      value="true"
                      required
                      >
-                     <label class="input__label grid-fill" for="optin">j'accepte les conditions d'utilisation</label>
+                     <label class="input__label " for="optin">j'accepte les conditions d'utilisation <div class="error_info">Vous devez accepter les conditions d'utilisation</div></label>
                 </div>
             </fieldset>
         
@@ -258,6 +258,116 @@
     </div>
 
     </form>
+</div>
+</section>
+
+<section class="faq" data-component="Accordion">
+    <div class="wrapper">
+    <h3>Questions fréquentes</h3>
+    <h2>Connaissez-nous mieux</h2>
+
+    <div class="question-group js-header">
+        <div class="question">
+            <h5>Qu'est-ce que la MRC de Baie Ste-Catherine?</h5>
+            <svg class="icon icon--lg">
+                <use xlink:href="#icon-chevron-down"></use>
+            </svg>
+        </div>
+
+        <div class="answer">
+            <p>La MRC de Baie Ste-Catherine est une municipalité 
+                régionale de comté située dans la région administrative de la Côte-Nord au Québec, Canada.</p>
+        </div>
+    </div>
+
+    <div class="question-group js-header">
+        <div class="question">
+            <h5>Quelle est la population de la MRC de Baie Ste-Catherine?</h5>
+            <svg class="icon icon--lg">
+                <use xlink:href="#icon-chevron-down"></use>
+            </svg>
+        </div>
+
+        <div class="answer">
+            <p>Selon le recensement de 2016, la population de la MRC de 
+                Baie Ste-Catherine est de 3 229 habitants.
+            </p>
+        </div>
+    </div>
+
+    <div class="question-group js-header">
+        <div class="question">
+            <h5>Quels sont les principaux secteurs économiques de la MRC de Baie Ste-Catherine?</h5>
+            <svg class="icon icon--lg">
+                <use xlink:href="#icon-chevron-down"></use>
+            </svg>
+        </div>
+
+        <div class="answer">
+            <p>Les principales industries de la MRC de Baie Ste-Catherine sont la pêche, 
+                le transport maritime, le tourisme et l'agriculture.</p>
+        </div>
+    </div>
+
+    <div class="question-group js-header">
+        <div class="question">
+            <h5>Quels sont les attraits touristiques de la MRC de Baie Ste-Catherine?</h5>
+            <svg class="icon icon--lg">
+                <use xlink:href="#icon-chevron-down"></use>
+            </svg>
+        </div>
+
+        <div class="answer">
+            <p>La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une destination populaire pour 
+                les excursions d'observation des baleines. Elle compte également de nombreux sentiers de randonnée, des plages, 
+                des musées et des festivals tout au long de l'année.</p>
+        </div>
+    </div>
+
+    <div class="question-group js-header">
+        <div class="question">
+            <h5>Quels sont les services offerts par la MRC de Baie Ste-Catherine à ses citoyens?</h5>
+            <svg class="icon icon--lg">
+                <use xlink:href="#icon-chevron-down"></use>
+            </svg>
+        </div>
+
+        <div class="answer">
+            <p>La MRC de Baie Ste-Catherine offre une gamme de services à ses citoyens, notamment des services de gestion des déchets, 
+                des services de protection contre les incendies, des services de développement économique 
+                et touristique et des services de transport en commun.</p>
+        </div>
+    </div>
+
+    <div class="question-group js-header">
+        <div class="question">
+            <h5>Quels sont les événements annuels organisés par la MRC de Baie Ste-Catherine?</h5>
+            <svg class="icon icon--lg">
+                <use xlink:href="#icon-chevron-down"></use>
+            </svg>
+        </div>
+
+        <div class="answer">
+            <p>La MRC de Baie Ste-Catherine organise plusieurs événements tout au long de l'année, 
+                tels que la Fête de la pêche, la Journée internationale des femmes, 
+                la Fête de la musique et le Tournoi de hockey Baie Ste-Catherine.</p>
+        </div>
+    </div>
+
+    <div class="question-group js-header">
+        <div class="question">
+            <h5>Quels sont les projets en cours dans la MRC de Baie Ste-Catherine?</h5>
+            <svg class="icon icon--lg">
+                <use xlink:href="#icon-chevron-down"></use>
+            </svg>
+        </div>
+
+        <div class="answer">
+            <p>La MRC de Baie Ste-Catherine travaille actuellement sur 
+                plusieurs projets, notamment le développement d'un parc 
+                industriel et l'amélioration des infrastructures de transport.</p>
+        </div>
+    </div>
 </div>
 </section>
 

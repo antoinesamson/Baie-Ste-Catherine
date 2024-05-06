@@ -40,9 +40,14 @@
 }
 
 .input__label{
-    display: block;
+    display: flex;
+    justify-content: space-between;
     font-family: var(--font-primary);
     font-weight: 700;
+
+    .error_info{
+        display: none;
+    }
 }
 
 .input__element{
@@ -217,5 +222,12 @@
 
     .input__label{
         color: var(--color-fail);
+
+        .error_info{
+            display: block;
+        }
     }
+
+
 }
+
