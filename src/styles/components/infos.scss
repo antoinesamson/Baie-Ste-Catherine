@@ -26,10 +26,22 @@
 
             }
     }
+
+    .infos-content,
+    .infos-media{
+        @media screen and (max-width: $breakpoint-md) {
+            width: 100%;
+        }
+    }
     
     .sociaux{
         justify-content: left;
         margin-top: 34px;
+
+        @media screen and (max-width: $breakpoint-md) {
+            justify-content: center;
+
+        }
     }
     
 }

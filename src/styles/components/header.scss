@@ -4,6 +4,7 @@ header{
     z-index: 15;
     background-color: var(--color-white);
     width: 100%;
+    transition: all 0.3s ease-out;
     
 
         .nav-is-active &{
@@ -159,3 +160,16 @@ nav {
 
         
 }
+
+.is-scrolling-down{
+    header{
+            transform: translateY(-200px);
+        }
+    
+    
+}
+.is-scrolling-down.nav-is-active{
+    header{
+        transform: translateY(0);
+    }  
+    }
