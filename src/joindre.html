@@ -78,7 +78,7 @@
             <fieldset class="grid">
                 
                 <div class="input">
-                    <label class="input__label" for="name">Votre prénom* <div class="error_info">Veuillez entrer un prénom</div></label>
+                    <label class="input__label" for="name">Votre prénom* </label>
                     <input
                      class="input__element" 
                      type="text" 
@@ -87,10 +87,12 @@
                      placeholder="Jean-Eude"
                      required
                      >
+
+                     <div class="error_info">Veuillez entrer un prénom</div>
                 </div>
     
                 <div class="input">
-                    <label class="input__label" for="last-name">Votre nom* <div class="error_info">Veuillez entrer un nom</div></label>
+                    <label class="input__label" for="last-name">Votre nom* </label>
                     <input
                      class="input__element" 
                      type="text" 
@@ -99,10 +101,12 @@
                      placeholder="Courtepaille"
                      required
                      >
+
+                     <div class="error_info">Veuillez entrer un nom</div>
                 </div>
     
                 <div class="input grid-fill">
-                    <label class="input__label" for="address">Addresse* <div class="error_info">Veuillez entrer une adresse valide</div></label>
+                    <label class="input__label" for="address">Addresse* </label>
                     <input
                      class="input__element" 
                      type="text" 
@@ -111,10 +115,12 @@
                      placeholder="2020, rue du Finfin"
                      required
                      >
+
+                     <div class="error_info">Veuillez entrer une adresse valide</div>
                 </div>
                 
                 <div class="input">
-                    <label class="input__label" for="city">Ville* <div class="error_info">Veuillez entrer un nom de ville</div></label>
+                    <label class="input__label" for="city">Ville* </label>
                     <input
                      class="input__element" 
                      type="text" 
@@ -123,10 +129,12 @@
                      placeholder="Longueuil"
                      required
                      >
+
+                     <div class="error_info">Veuillez entrer un nom de ville</div>
                 </div>
                 
                 <div class="input select">
-                    <label class="input__label" for="province">Province* <div class="error_info">Veuillez séléctionner une province</div></label>
+                    <label class="input__label" for="province">Province* </label>
                     <select name="province" id="province" class="input__element" required>
                         <option value="" hidden>Choisir une province</option>
                         <option value="qc">Québec</option>
@@ -139,10 +147,12 @@
                         <option value="ipe">Île du Prince Édouard</option>
                         <option value="ne">Nouvelle Écosse</option>
                     </select>
+
+                    <div class="error_info">Veuillez séléctionner une province</div>
                 </div>
     
                 <div class="input">
-                    <label class="input__label" for="phone">Votre numéro de téléphone* <div class="error_info">Veuillez entrer un numéro de téléphone valide</div></label>
+                    <label class="input__label" for="phone">Votre numéro de téléphone* </label>
                     <input
                      class="input__element" 
                      type="tel" 
@@ -152,10 +162,12 @@
                      pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
                      required
                      >
+
+                     <div class="error_info">Veuillez entrer un numéro de téléphone valide</div>
                 </div>
     
                 <div class="input">
-                    <label class="input__label" for="email">Votre adresse courriel* <div class="error_info">Veuillez entrer une adresse courriel valide</div></label>
+                    <label class="input__label" for="email">Votre adresse courriel* </label>
                     <input
                      class="input__element" 
                      type="email" 
@@ -164,11 +176,14 @@
                      placeholder="Jean-Eude@comtedelarocheliere.com"
                      required
                      >
+
+                     <div class="error_info">Veuillez entrer une adresse courriel valide</div>
                 </div>
     
-                <label class="input__label grid-fill" for="contact1">Méthode pour vous joindre* <div class="error_info">Veuillez sélectionner une méthode de contact</div></label>
-    
+                    
                 <div class="form__list" data-input-container>
+                <label class="input__label grid-fill" for="contact1">Méthode pour vous joindre* </label>
+
                 <div class="input radio grid-fill">
                     
                     <input
@@ -193,6 +208,8 @@
                      required
                      >
                      <label class="input__label grid-fill" for="contact2">Téléphone</label>
+
+                     <div class="error_info">Veuillez sélectionner une méthode de contact</div>
                 </div>
     
             </div>
@@ -208,7 +225,7 @@
             <fieldset class="grid">
                 <h5>Requête citoyenne</h5>
                 <div class="input select grid-fill">
-                    <label class="input__label" for="subject">Sujet* <div class="error_info">Veuillez entrer un sujet</div></label>
+                    <label class="input__label" for="subject">Sujet*</label>
                     <select name="subject" id="subject" class="input__element" required>
                         <option value="" hidden>Sélectionnez une requête</option>
                         <option value="p">Permis de stationnement</option>
@@ -216,11 +233,14 @@
                         <option value="r">Réservation de salle</option>
                         <option value="a">Autre</option>
                     </select>
+
+                    <div class="error_info">Veuillez entrer un sujet</div>
                 </div>
     
                 <div class="input textarea grid-fill">
-                    <label class="input__label" for="comment">Commentaire* <div class="error_info">Veuillez entrer votre requête ici</div></label>
+                    <label class="input__label" for="comment">Commentaire* </label>
                     <textarea class="input__element" name="comment" id="comment" maxlength="500" placeholder="Inscrire votre requête ici" required></textarea>
+                    <div class="error_info">Veuillez entrer votre requête ici</div>
                 </div>
                 
                 <label class="input__label grid-fill" for="optin">Conditions d'utilisation* </label>
@@ -234,7 +254,9 @@
                      value="true"
                      required
                      >
-                     <label class="input__label " for="optin">j'accepte les conditions d'utilisation <div class="error_info">Vous devez accepter les conditions d'utilisation</div></label>
+                     <label class="input__label " for="optin">j'accepte les conditions d'utilisation </label>
+
+                     <div class="error_info">Vous devez accepter les conditions d'utilisation</div>
                 </div>
             </fieldset>
         
@@ -295,7 +317,7 @@
         </div>
     </div>
 
-    <div class="question-group js-header" data-autoopen>
+    <div class="question-group js-header">
         <div class="question">
             <h5>Quels sont les principaux secteurs économiques de la MRC de Baie Ste-Catherine?</h5>
             <svg class="icon icon--lg">
@@ -339,7 +361,7 @@
         </div>
     </div>
 
-    <div class="question-group js-header"  data-autoopen>
+    <div class="question-group js-header">
         <div class="question">
             <h5>Quels sont les événements annuels organisés par la MRC de Baie Ste-Catherine?</h5>
             <svg class="icon icon--lg">
@@ -366,6 +388,34 @@
             <p>La MRC de Baie Ste-Catherine travaille actuellement sur 
                 plusieurs projets, notamment le développement d'un parc 
                 industriel et l'amélioration des infrastructures de transport.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="videos">
+    <div class="wrapper">
+    <h3>Vidéos</h3>
+    <h2>La ville en mouvement</h2>
+
+    <div class="videos-container">
+
+        <div class="video" data-component="Youtube" data-video-id="zpK4aHvleIY">
+            <div class="video__media js-video">
+                <img class="js-poster" src="assets/images/poster1.png" alt="Vue d'une montagne sur coucher de soleil" />
+                <svg class="icon icon--xl">
+                    <use xlink:href="#icon-play"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="video" data-component="Youtube" data-video-id="y69LYSdOMOc">
+            <div class="video__media js-video">
+                <img class="js-poster" src="assets/images/poster2.png" alt="Vue aérienne de la mer" />
+                <svg class="icon icon--xl">
+                    <use xlink:href="#icon-play"></use>
+                </svg>
+            </div>
         </div>
     </div>
 </div>

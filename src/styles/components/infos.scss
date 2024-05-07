@@ -17,6 +17,14 @@
         justify-content: left;
         align-items: center;
         gap: 142px;
+
+        @media screen and (max-width: $breakpoint-md) {
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                gap: 40px;
+
+            }
     }
     
     .sociaux{

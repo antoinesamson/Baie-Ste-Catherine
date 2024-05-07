@@ -8,9 +8,43 @@
     grid-template-columns: repeat(12, 1fr) ;
     margin-bottom: 50px;
     position: relative;
+
+    @media screen and (max-width: $breakpoint-lg) {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        margin: 0;
+
+        .story-content{
+            margin: 0;
+        }
+        }
+}
+
+.story-group.reverse{
+    .story-media {
+        grid-column-start: 5;
+        grid-column-end: 13;
+    }
+
+    .story-content {
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    @media screen and (max-width: $breakpoint-lg) {
+
+        flex-direction: column-reverse;
+        margin-top: 100px;
+        }
 }
 
 .story-media {
+    height: 100%;
+    width: 100%;
     img {
         height: 100%;
         width: 100%;
@@ -20,10 +54,7 @@
     grid-column-end: 9;
 }
 
-.story-media.reverse {
-    grid-column-start: 5;
-    grid-column-end: 13;
-}
+
 
 .story-content {
     margin: 15% 0 0 0;
@@ -33,8 +64,10 @@
     grid-column-start: 8;
     grid-column-end: 13;
     position: absolute;
+
+    @media screen and (max-width: $breakpoint-lg) {
+
+        position: static;
+        }
 }
-.story-content.reverse {
-    grid-column-start: 1;
-    grid-column-end: 6;
-}
+

@@ -35,8 +35,13 @@ export default class Carousel {
     }
 
     if ('slides' in this.element.dataset) {
-      this.options.slidesPerView = 3.5;
+      this.options.slidesPerView = 1.5;
       this.options.spaceBetween = 20;
+      this.options.breakpoints = {
+        768: {
+          slidesPerView: 3.5,
+        },
+      };
     }
   }
 }

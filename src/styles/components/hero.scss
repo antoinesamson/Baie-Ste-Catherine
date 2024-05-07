@@ -23,9 +23,42 @@
         .blue {
             color: var(--color-primary);
         }
+
+        @media screen and (max-width: $breakpoint-md) {
+
+            width: 80%;
+
+            top: calc(50% - 100px);
+            }
+
+            @media screen and (max-width: $breakpoint-sm) {
+
+                width: 90%;
+    
+                top: calc(50% - 40px);
+                }
     }
 
     .button:hover{
         background-color: var(--color-white);
     }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .button{
+                    display: none;
+                }
+        }
+        
+   
+
+    @media screen and (max-width: $breakpoint-xs) {
+
+        height: 220px;
+
+
+        .swiper{
+            height: 220px;  
+        }
+        }
+    
 }

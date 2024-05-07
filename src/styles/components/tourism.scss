@@ -16,4 +16,14 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    @media screen and (max-width: $breakpoint-md) {
+
+        flex-direction: column;
+
+        h5{
+            font-size: 28px;
+            margin: 5px 0 20px;
+        }
+        }
 }
