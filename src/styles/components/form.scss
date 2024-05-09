@@ -50,8 +50,12 @@
     font-weight: 700;
     margin-bottom: 26px;
 
+    &::before{
+        transition: all 0.3s ease-out;
+    }
     
 }
+
 
 .input__element{
     width: 100%;
@@ -59,7 +63,7 @@
     border-radius: 16px;
     padding: var(--input-padding);
     font-family: inherit;
-    transition: all 0.3s ease-out;
+    
 
     &:hover,
     + .input__label:hover::before {
@@ -188,6 +192,7 @@
 }
 
 .checkbox{
+    transition: all 0.3s ease-out;
         .input__label::after{
             background: url(../../assets/icons/check.svg) no-repeat 50% 50%;
             background-size: 50%;
