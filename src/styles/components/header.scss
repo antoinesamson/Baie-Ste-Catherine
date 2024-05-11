@@ -13,7 +13,7 @@ header{
                 display: flex;
             }
 
-            @media screen and (max-width: $breakpoint-md) {
+            @media screen and (max-width: $breakpoint-sm) {
 
                 height: 100%;
                 width: 100%;
@@ -30,6 +30,10 @@ header{
     align-items: center;
     height: 171px;
     padding: 30px 0;
+
+    @media screen and (max-width: $breakpoint-sm) {
+        height: 100px;
+        }
     
 }
 
@@ -45,21 +49,16 @@ nav {
         }
 
 
-        @media screen and (max-width: $breakpoint-md) {
+        @media screen and (max-width: $breakpoint-sm) {
         display: none;
         flex-direction: column;
         position: absolute;
         font-size: var(--font-size-h1);
-        top: calc(50% - 240px);
-        left: calc(50% - 160px);
+        top: calc(50% - 160px);
+        left: calc(50% - 100px);
         z-index: 10;
 
         }
-
-        @media screen and (max-width: $breakpoint-md) {
-            top: calc(50% - 240px);
-            left: calc(50% - 140px);  
-            }
     }
 
     
@@ -84,6 +83,10 @@ nav {
         color: var(--color-black);
         height: 74px;
         width: 100px;
+        @media screen and (max-width: $breakpoint-sm) {
+            height: 50px;
+            width: 75px;
+            }
     }
     &:hover {
         text-decoration: none;
@@ -97,9 +100,9 @@ nav {
 
 .header__toggle{
 
-    --bar-height: 8px;
-    --bar-spacer: 6px;
-    --bar-width: 50px;
+    --bar-height: 6px;
+    --bar-spacer: 4px;
+    --bar-width: 30px;
 
     background-color: transparent;
     border: none;
@@ -136,7 +139,9 @@ nav {
             );
         }
 
-        @media screen and (min-width: $breakpoint-md) {
+
+
+        @media screen and (min-width: $breakpoint-sm) {
             display: none;
 
         }
@@ -163,6 +168,8 @@ nav {
                 }
             }
         }
+
+        
 
         
 }
